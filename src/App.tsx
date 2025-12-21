@@ -86,7 +86,7 @@ function App() {
           className="absolute bottom-0 w-full h-auto"
         />
         {step === 1 && (
-          <div className="flex min-h-dvh flex-col items-center justify-start pt-24 sm:pt-26 md:pt-8 lg:pt-35">
+          <div className="flex min-h-dvh flex-col items-center justify-start pt-24 sm:pt-18 md:pt-8 lg:pt-35">
             <div className="relative z-10 flex pt-5 flex-col items-center justify-start px-4 sm:px-6 md:px-8 w-full max-w-md">
               {/* logo */}
               <img
@@ -113,7 +113,7 @@ function App() {
             <img
               src="./assets/images/yalda.png"
               alt="logo"
-              className="absolute bottom-0 left-1/2 md:w-[75%] sm:w-[80%]  -translate-x-1/2 h-auto px-12 sm:px-0"
+              className="absolute bottom-0 left-1/2 md:w-[75%] sm:w-[70%]  -translate-x-1/2 h-auto px-12 sm:px-0"
 
             />
           </div>
@@ -178,11 +178,11 @@ function App() {
         )}
         {step === 3 && (
           <div className="relative min-h-dvh w-full flex flex-col">
-            <div className="z-10 flex flex-col items-center justify-start pt-10 sm:pt-16 md:pt-10 lg:pt-10 px-4 sm:px-6 md:px-8 flex-1">
+            <div className="z-10 flex flex-col items-center justify-start pt-10 sm:pt-12 md:pt-10 lg:pt-10 px-4 sm:px-6 md:px-8 flex-1">
               <img
                 src="./assets/images/logo2.png"
                 alt="bg"
-                className="w-2/5 sm:w-1/3 md:w-2/5 max-w-xs mb-4"
+                className="w-2/5 sm:w-1/4 md:w-2/5 max-w-xs mb-4"
               />
               <div className="flex flex-col gap-4 w-full max-w-lg flex-1">
                 <WheelSpinner onReset={handleResetToStepOne} />
