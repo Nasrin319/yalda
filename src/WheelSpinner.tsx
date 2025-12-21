@@ -283,13 +283,13 @@ const WheelSpinner: React.FC<WheelSpinnerProps> = ({ onReset }) => {
             className="w-full transition-transform duration-1000 ease-out"
             style={{ height: '201px' }}
           />
-          <div className={`absolute top-1/2 left-1/2 -translate-x-12/20 translate-y-9 flex md:gap-10 gap-9 transition-all duration-500 ${showFixedCards ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
+          <div className={`absolute top-1/2 left-1/2 -translate-x-12/20 translate-y-9 flex md:gap-10 gap-7 sm:gap-4 transition-all duration-500 ${showFixedCards ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
             }`}>
             {currentCards.map((card, index) => (
               <CardWrapper key={`fixed-${index}`} card={card} index={index} isSpinning={false} />
             ))}
           </div>
-          <div className={`absolute top-1/2 left-1/2 -translate-x-12/20 translate-y-9 flex md:gap-10 gap-9 transition-all duration-500 spinning-cards-container ${isSpinning ? 'animate-spin-vertical opacity-100 scale-100' : 'opacity-0 scale-95'
+          <div className={`absolute top-1/2 left-1/2 -translate-x-12/20 translate-y-9 flex md:gap-10 gap-7 sm:gap-4 transition-all duration-500 spinning-cards-container ${isSpinning ? 'animate-spin-vertical opacity-100 scale-100' : 'opacity-0 scale-95'
             }`}>
             {currentCards.map((card, index) => (
               <CardWrapper key={`spinning-${index}`} card={card} index={index} isSpinning={true} />
