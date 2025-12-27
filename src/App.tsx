@@ -267,10 +267,8 @@ function App() {
                 className="flex flex-col items-center px-[4vw]"
                 style={{
                   minHeight: '75%',
-                  // paddingTop: 'clamp(35px, 5vh, 60px)',
-                  // paddingTop: 'clamp(50px, 6vh, 70px)',
-                  paddingTop: 'clamp(70px, 9vh, 100px)',
-                  // paddingTop: 'clamp(40px, 4vh, 50px)',
+                  // paddingTop: 'clamp(40px, 8vh, 100px)',
+                   paddingTop: 'clamp(40px, 8vh, 170px)',
                   paddingBottom: 'clamp(60px, 10vh, 100px)',
                   justifyContent: 'flex-start'
                 }}
@@ -285,7 +283,6 @@ function App() {
                     style={{
                       width: 'clamp(120px, 20vw, 220px)',
                       height: 'auto',
-                      // maxHeight: '16vh'
                     }}
                   />
 
